@@ -3,12 +3,12 @@ def reverse_each_word_with_each(string)
   # First solve it using .each Then write the same method using .collect to see the difference.
   # turn the string into an array
   # .reverse reverses an array
-  string = string.split(“”)
-  reversed = []
-  string.each {|i| reversed.unshift(i)}
-
+  original_array = string.split(' ')
+  return_array = []
+  original_array.each do |string|
+    return_array << string.reverse
   end
-  reversed.join(“”)
+  return_array.join(' ')
 end
 
 def reverse_each_word(string)
@@ -22,3 +22,4 @@ end
 
 reverse_each_word('Hello there, and how are you?')
 #=> "olleH ,ereht dna woh era ?uoy"
+
