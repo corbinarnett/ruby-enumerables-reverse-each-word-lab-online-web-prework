@@ -6,7 +6,7 @@ def reverse_each_word_with_each(string)
   string = string.split(“”)
   reversed = []
   string.each {|i| reversed.unshift(i)}
-  
+
   end
   reversed.join(“”)
 end
